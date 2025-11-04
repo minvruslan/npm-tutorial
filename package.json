@@ -1,0 +1,37 @@
+{
+  "name": "@minvruslan/npm-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "type": "module",
+  "main": "lib/index.cjs",
+  "exports": {
+    "import": {
+      "default": "./lib/index.esm.js",
+      "types": "./lib/types/index.d.ts"
+    },
+    "require": {
+      "default": "./lib/index.cjs",
+      "types": "./lib/types/index.d.ts"
+    }
+  },
+  "files": ["lib"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minvruslan/npm-tutorial.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/minvruslan/npm-tutorial/issues"
+  },
+  "homepage": "https://github.com/minvruslan/npm-tutorial#readme",
+  "devDependencies": {
+    "rollup": "^4.17.2",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.4.5"
+  }
+}
