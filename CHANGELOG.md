@@ -1,5 +1,11 @@
 # @minvruslan/npm-tutorial
 
+## 1.3.1
+
+### Patch Changes
+
+- 2e52d07: fefaef a
+
 ## 1.3.0
 
 ### Minor Changes
