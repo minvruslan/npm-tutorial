@@ -1,5 +1,13 @@
 # @minvruslan/npm-tutorial
 
+## 2.0.0
+
+### Major Changes
+
+- 3801c9e: fwefw fewfw
+- adf4387: fewfef wefwef
+- 2613991: fefaedw e
+
 ## 1.4.0
 
 ### Minor Changes
