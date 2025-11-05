@@ -9,6 +9,7 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   release:
@@ -20,6 +21,7 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
       - name: set up node.js
         uses: actions/setup-node@v4
         with:
@@ -31,7 +33,9 @@ jobs:
         uses: changesets/action@v1
         with:
           publish: npm publish --access public
+          setupGitUser: true
           createGithubReleases: true
+          commitMode: git-cli
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
