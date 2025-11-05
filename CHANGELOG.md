@@ -1,5 +1,11 @@
 # @minvruslan/npm-tutorial
 
+## 1.3.0
+
+### Minor Changes
+
+- 74fb750: delete logs
+
 ## 1.2.0
 
 ### Minor Changes
