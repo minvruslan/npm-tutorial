@@ -1,5 +1,11 @@
 # @minvruslan/npm-tutorial
 
+## 1.4.0
+
+### Minor Changes
+
+- 6e98269: test
+
 ## 1.3.2
 
 ### Patch Changes
