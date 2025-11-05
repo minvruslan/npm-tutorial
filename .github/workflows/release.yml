@@ -30,7 +30,7 @@ jobs:
         run: npm ci
       - name: create release pull request
         id: changeset_action
-        uses: changesets/action@v1
+        uses: changesets/action@vmaster
         with:
           publish: npm publish --access public
           setupGitUser: true
